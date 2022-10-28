@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>Guess The Gift Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src =
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+  </script> 
+</head>
+ 
+<body>
+  
+
+ <div class="container" style="font-size:25px" >You have to find all three gifts in minimum guess(3x3)</div>
+<table class="gameBoard" id="game">
+  <tr>
+    <td> <input type="button" value="01" id="01" onclick="change(this.id)" /> </td>
+    <td> <input type="button" value="02" id="02" onclick="change(this.id)" /> </td>
+    <td> <input type="button" value="03" id="03" onclick="change(this.id)" /> </td> 
+  </tr>
+  <tr>
+    <td> <input type="button" value="04" id="04" onclick="change(this.id)" /> </td>
+    <td> <input type="button" value="05" id="05" onclick="change(this.id)"/> </td>
+    <td> <input type="button" value="06" id="06" onclick="change(this.id)"/> </td> 
+  </tr>
+  <tr>
+    <td> <input type="button"   value="07" id="07" onclick="change(this.id)" /> </td>
+    <td> <input type="button"   value="08" id="08" onclick="change(this.id)" /> </td>
+    <td> <input type="button"   value="09" id="09" onclick="change(this.id)"/> </td>
+  </tr>
+
+</table>
+
+<div id="cont" ></div>
+<button class="home" onclick="home()";>  HOME   🏡</button>
+<button id="refresh" onclick="location.reload();">RESTART🔄️</button>
+
+
+
+
+<script type="text/javascript" src="js/basic.js"></script>
+ 
+</body>
+ 
+</html>

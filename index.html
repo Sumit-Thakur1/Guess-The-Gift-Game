@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESE THE GIFT GAME IN javascript</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container"><h1><u>GUESS THE GIFT GAME</u></h1> </div>
+   <div id="instructions"> <p>The game hides three gifts (at random each time the game is loaded). Your task is to find the gifts.</p>
+    <p>
+        <i><u>Goal </u>: </i> Find the gifts in the fewest number of guesses. The game rates you according to your 
+        performance. 
+    </p>
+   </div>
+
+<div id="box">
+    <div id="thecard">
+        <div id="front">
+        <img src="images/basic.png" alt="img" id="img1">
+        <h3 class="name">Level - Basic</h3>
+        <h6>Hover for detail</h6>  
+        </div>
+        <div id="back"><h5>This is basic level of game which consists of 3x3 matrix of choices.<br> To play the game please click the given button below...
+        </h5>
+        <button class="pageForward" type="button" onclick="basic()">Click me</button>
+        </div>
+    </div>
+</div>
+<div id="box">
+    <div id="thecard">
+        <div id="front">
+            <img src="images/medium.png" alt="img" id="img1">
+        <h3 class="name">Level - Medium</h3>
+        <h6>Hover for detail</h6>  
+        </div>
+        <div id="back"><h5>This is medium level of game which consists of 4x4 matrix of choices.<br> To play the game please click the given button below...
+        </h5>
+        <button class="pageForward" type="button" onclick="medium()">Click me</button>
+        </div>
+    </div>
+</div>
+<div id="box">
+    <div id="thecard">
+        <div id="front">
+            <img src="images/hard.png" alt="img" id="img1">
+        <h3 class="name">Level - Hard</h3>
+        <h6>Hover for detail</h6>  
+        </div>
+        <div id="back"><h5>This is hard level of game which consists of 6x6 matrix of choices.<br> To play the game please click the given button below...</h5>
+        <button class="pageForward" type="button" onclick="hard()">Click me</button>
+        </div>
+    </div>
+</div>
+     <script src="js/index.js"></script>
+</body>
+</html>
